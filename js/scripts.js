@@ -1,19 +1,11 @@
-$(document).ready(function() {
-    
-    
+$( document ).ready(function() {
 
 
 
 
-$(".burger").click(function (e) {
-    e.preventDefault();
-   
-           
 
 
 
-}); //click
 
-
-
-}); //ready
+  
+ });//ready
