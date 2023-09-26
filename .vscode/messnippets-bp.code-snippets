@@ -37,5 +37,25 @@
 			
 		],
 		"description": "écrire jquery click"
+	},
+	"header html": {
+		"scope": "html,php",
+		"prefix": "header",
+		"body": [
+			
+			"<header>"
+			"<a href=\"#\">Logo</a>"
+			"<nav>"
+			"	<ul>"
+			"		<li><a href=\"#\">item 1</a></li>"
+			"		<li><a href=\"#\">item 1</a></li>"
+			"		<li><a href=\"#\">item 1</a></li>"
+			"	</ul>"
+			"</nav>"
+			"</header>"
+			
+			
+		],
+		"description": "écrire jquery click"
 	}
 }
