@@ -58,4 +58,17 @@
 		],
 		"description": "écrire jquery click"
 	}
+	,
+	"boucle php": {
+		"scope": "php",
+		"prefix": "wp",
+		"body": [
+			
+			"$${mavariable} = \"rouge\""
+			
+			
+			
+		],
+		"description": "écrire jquery click"
+	}
 }

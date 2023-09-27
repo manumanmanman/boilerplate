@@ -15,7 +15,8 @@ if ($custom_query->have_posts()) :
    $post_terms = get_the_terms(get_the_ID(), 'category'); ?>
 
        
-ici conntenu de la boucle
+<!-- ici conntenu de la boucle -->
+
 
 
 <?php 
@@ -26,6 +27,7 @@ else :
 // If no posts are found
 echo 'No projects found';
 endif
+
 
 
 ?>
