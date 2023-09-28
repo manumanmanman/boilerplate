@@ -1,0 +1,72 @@
+.section-articles {
+    // background-color: blue;
+    background-color: #fff;
+
+
+    .articles {
+        height: 50vh;
+        // background-color: yellow;
+
+        .filtres {
+            background-color: beige;
+            padding: 20px;
+            color: black;
+
+            a {
+                margin: 0 20px;
+               &.current {
+                font-weight: bold;
+                color: red;
+                text-decoration: none;
+               } 
+            }
+        }
+
+
+.mesarticles{
+
+//    background-color: green; 
+
+    display: flex;
+    margin-bottom: 50px;
+    
+    
+    flex-wrap: wrap;
+    gap: 0px;
+
+    article {
+        margin: 10px;
+        border: solid 5px #eaeaea;
+        width: calc(25% - 20px); 
+        color: black;
+        
+        img {
+            width: 100%;
+        }
+        h2 {
+            margin: 0px 0 0 0;
+        }
+
+         &.web {
+            border-color: red;
+        }
+        &.edition {
+            border-color: blue;
+        }
+        &.troisd {
+            border-color: green;
+        }
+    }
+   
+    
+    h2{
+        // @extend %sectitre;
+        padding: 10px
+    }
+      
+    
+}
+
+} //articles
+
+} //fin
