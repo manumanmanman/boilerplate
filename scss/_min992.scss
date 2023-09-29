@@ -1,0 +1,21 @@
+@media (min-width: 992px) {
+
+
+    .resolution {
+        width: 100%;
+        
+        background-color: rgba(255,255,255,0.5);
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    
+        &::after{
+        content: "Large: ≥992px";
+    } 
+    
+     } // resolution
+
+
+
+
+  } // min 992

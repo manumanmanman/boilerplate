@@ -1,7 +1,23 @@
 
+.resolution {
+    width: 100%;
+    
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+    &::after{
+    content: "X-Small : <576px";
+} 
+
+ } // resolution
+
+
+
 body {
     margin: 0;
-    background-color: $primarycolor; 
+    background-color: #000; 
     color: #fff; 
 }
 

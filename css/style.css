@@ -1,10 +1,82 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+.resolution {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.resolution::after {
+  content: "X-Small : <576px";
+}
+
 body {
   margin: 0;
-  background-color: #1C2448;
+  background-color: #000;
   color: #fff;
 }
 
+@media (min-width: 576px) {
+  .resolution {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .resolution::after {
+    content: "Small: ≥576px";
+  }
+}
+@media (min-width: 768px) {
+  .resolution {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .resolution::after {
+    content: "Medium: ≥768px";
+  }
+}
+@media (min-width: 992px) {
+  .resolution {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .resolution::after {
+    content: "Large: ≥992px";
+  }
+}
+@media (min-width: 1200px) {
+  .resolution {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .resolution::after {
+    content: "XL: ≥1200px";
+  }
+}
+@media (min-width: 1400px) {
+  .resolution {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .resolution::after {
+    content: "XXL: ≥1400px";
+  }
+}
 #logo, header nav ul li a {
   text-decoration: none;
   color: #1C2448;
@@ -76,21 +148,8 @@ footer p, .customer div p, .about p {
 }
 
 body {
-  background-color: red;
   margin: 0;
   font-family: "Poppins", sans-serif;
-}
-
-.resolution {
-  width: 100%;
-  height: 50px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-}
-.resolution::after {
-  content: "X-Small : <576px";
 }
 
 header {
