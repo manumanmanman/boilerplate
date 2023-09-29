@@ -1,0 +1,25 @@
+h1 {
+    margin-bottom: 50px;
+}
+
+.main {
+
+    background-color: #3e97e5;
+    padding-top: 10px;
+
+    .row {
+      & >  div {
+            // background-color: #eaeaea;
+            // box-sizing: border-box;
+            // border: solid 1px #eaeaea;
+            // color: #fff;
+            margin-bottom: 10px;
+
+            div {
+                padding: 10px;
+            }
+
+        }
+    }
+
+}
