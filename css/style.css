@@ -103,7 +103,6 @@ header {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  position: fixed;
   padding: 0 25px;
   background-color: #fff;
 }
@@ -234,15 +233,20 @@ footer p {
 
 .section-articles {
   background-color: #fff;
+  color: #000;
+}
+.section-articles h1 {
+  text-align: center;
 }
 .section-articles .articles {
-  height: 50vh;
-  padding: 40px;
+  background-color: lightblue;
+  padding: 60px;
 }
 .section-articles .articles .filtres {
   background-color: beige;
   padding: 20px;
   color: black;
+  margin-bottom: 20px;
 }
 .section-articles .articles .filtres a {
   margin: 0 20px;
@@ -253,16 +257,18 @@ footer p {
   text-decoration: none;
 }
 .section-articles .articles .mesarticles {
+  background-color: #fff;
   display: flex;
   margin-bottom: 50px;
   flex-wrap: wrap;
   gap: 20px;
 }
 .section-articles .articles .mesarticles article {
-  border: solid 5px #eaeaea;
+  border: solid 2px #eaeaea;
   width: calc((100% - 60px) / 4);
   aspect-ratio: 1/1;
   color: black;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -278,14 +284,14 @@ footer p {
   margin: 0 0 50px 0;
   text-align: center;
 }
-.section-articles .articles .mesarticles article.web {
-  border-color: red;
+.section-articles .articles .mesarticles article.web h2 {
+  color: red;
 }
-.section-articles .articles .mesarticles article.edition {
-  border-color: blue;
+.section-articles .articles .mesarticles article.edition h2 {
+  color: blue;
 }
-.section-articles .articles .mesarticles article.troisd {
-  border-color: green;
+.section-articles .articles .mesarticles article.troisd h2 {
+  color: green;
 }
 .section-articles .articles .mesarticles h2 {
   padding: 10px;

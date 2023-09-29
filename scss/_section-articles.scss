@@ -1,17 +1,23 @@
 .section-articles {
     // background-color: blue;
     background-color: #fff;
+    color: #000;
+
+    h1 {
+        text-align: center;
+    }
 
 
     .articles {
-        height: 50vh;
-        // background-color: yellow;
-        padding: 40px;
+        // height: 50vh;
+        background-color: lightblue; 
+        padding: 60px;
 
         .filtres {
             background-color: beige;
             padding: 20px;
             color: black;
+            margin-bottom: 20px;
 
             a {
                 margin: 0 20px;
@@ -26,8 +32,8 @@
 
 .mesarticles{
 
-//    background-color: green; 
 
+    background-color: #fff;
     display: flex;
     margin-bottom: 50px;
     
@@ -35,14 +41,16 @@
     flex-wrap: wrap;
     // justify-content: flex-start;
     gap: 20px;
+    // padding: 10px;
 
     article {
         // margin: 10px;
-        border: solid 5px #eaeaea;
+        border: solid 2px #eaeaea;
         // width: calc(25% - 20px); 
         width: calc((100% - 60px) / 4); 
         aspect-ratio: 1/1;
         color: black;
+        background-color: #fff;
 
         display: flex;
         flex-direction: column;
@@ -61,13 +69,22 @@
         }
 
          &.web {
-            border-color: red;
+            h2 {
+                color: red;
+            }
+           
         }
         &.edition {
-            border-color: blue;
+            h2 {
+                color: blue;
+            }
+           
         }
         &.troisd {
-            border-color: green;
+            h2 {
+                color: green;
+            }
+           
         }
     }
    
