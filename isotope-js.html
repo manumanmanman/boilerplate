@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotope JS</title>
+    <style>
+        .grid-item { 
+        
+            box-sizing: border-box;
+            width: 25%;
+         }
+
+
+.grid > div {
+    border: solid 1px red;
+}
+    </style>
+</head>
+<body>
+    <h1>Isotope JS</h1>
+    <div class="button-group filter-button-group">
+        Filter
+        <button data-filter="*">show all</button>
+        <button data-filter=".web">web</button>
+        <button data-filter=".troisd">troisd</button>
+        <button data-filter=".edition">edtion</button>
+   
+      </div>
+    <div class="grid">
+        <div class="grid-item web">web</div>
+        <div class="grid-item troisd">troisd</div>
+        <div class="grid-item edition">edition</div>
+        <div class="grid-item troisd">troisd</div>
+        <div class="grid-item edition">edition</div>
+        <div class="grid-item web">web</div>
+    
+      </div>
+
+
+<script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+
+
+
+$(document).ready(function() {
+    
+    var $grid = $('.grid').isotope({
+  // options
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+     
+});
+    </script>
+</body>
+</html>
